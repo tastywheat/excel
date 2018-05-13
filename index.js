@@ -12,7 +12,7 @@ const ws2 = wb.addWorksheet('Sheet 2');
 const style = wb.createStyle({
     font: {
         color: '#FF0800',
-        size: 12
+        size: 15
     },
     numberFormat: '$#,##0.00; ($#,##0.00); -'
 });
@@ -32,4 +32,4 @@ ws.cell(2,1).string('string').style(style);
 // Set value of cell A3 to true as a boolean type styled with paramaters of style but with an adjustment to the font size.
 ws.cell(3,1).bool(true).style(style).style({font: {size: 14}});
 
-wb.write('Excel.xlsx');
+wb.write('output.xlsx');
