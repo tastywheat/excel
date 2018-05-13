@@ -12,7 +12,7 @@ const ws2 = wb.addWorksheet('Sheet 2');
 const style = wb.createStyle({
     font: {
         color: '#FF0800',
-        size: 12
+        size: 15
     },
     numberFormat: '$#,##0.00; ($#,##0.00); -'
 });
